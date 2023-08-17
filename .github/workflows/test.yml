@@ -10,12 +10,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Java
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11' # Make sure the version is quoted as a string
-          distribution: 'adopt' # Specify the distribution (adopt, adopt-openj9, etc.)
-
       - name: Make Gradlew Executable
         run: chmod +x gradlew # Make the gradlew script executable
 
